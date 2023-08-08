@@ -1,26 +1,45 @@
-.light-theme {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Lexend');
+
+#root {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-family: Lexend, sans-serif;
 }
 
-.dark-theme {
+.list-style-disc {
+    list-style: disc;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@media screen {
+    .screen {
+        &-no-show {
+            display: none;
+        }
+    }
 }
 
-.header {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: row;
-}
+@media print {
+    .print {
+        &-no-shadow {
+            box-shadow: none;
+        }
 
-.icon-link {
-  padding: 0.5rem;
+        &-no-border {
+            border: none;
+        }
 
-  .icon {
-    margin-right: 0.5rem;
-  }
+        &-no-show {
+            display: none;
+        }
 
-  .text {
-  }
+        &-bg-none {
+            background: none;
+        }
+    } 
 }

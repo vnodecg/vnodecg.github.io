@@ -1,19 +1,26 @@
 import { Resume } from "../interfaces/resume";
+import flamboyanz from '../assets/logos/flamboyanz.jpeg';
+import hashcube from '../assets/logos/hashcube.jpeg';
+import songline from '../assets/logos/uninstall.jpeg';
+import smartwebs from '../assets/logos/smartwebs.jpeg';
+import ciena from '../assets/logos/ciena.jpeg';
+import auburn from '../assets/logos/auburn.jpeg';
+import vtu from '../assets/logos/vtu.jpeg';
+import google from '../assets/logos/google.jpeg';
 
 const resume: Resume = {
   basics: {
     name: "Vinod C G",
     label: "Engineering manager",
-    image: "",
     email: "vnodecg1990@gmail.com",
     phone: "+91 95358 49622",
     url: "",
-    summary: "",
+    summary: "Accomplished Software Engineering Manager and Full Stack Developer, adept at leading distributed teams, delivering successful projects, and implementing UI/UX solutions.",
     location: {
       address: "",
-      postalCode: "560049",
+      postalCode: "",
       city: "Bangalore",
-      countryCode: "India",
+      countryCode: "IN",
     },
     profiles: [
       {
@@ -30,6 +37,7 @@ const resume: Resume = {
       location: "Bangalore, India",
       url: "https://ciena.com",
       startDate: "2021-03-01",
+      logo: ciena,
       highlights: [
         "Lead and manage a highly productive and distributed team of 12 developers and 2 QA engineers.",
         "Mentor team members, provide technical guidance, and swiftly address their queries.",
@@ -52,6 +60,7 @@ const resume: Resume = {
       url: "https://ciena.com",
       startDate: "2018-11-01",
       endDate: "2021-03-01",
+      logo: ciena,
       highlights: [
         "Innovatively implemented a wizard UI for creating and modifying Network Service Descriptor designs.",
         "Addressed scalability issues in the Network Function Virtualization UI, significantly enhancing performance.",
@@ -68,6 +77,7 @@ const resume: Resume = {
       name: "Smartwebs Inc.",
       position: "Senior Fullstack developer",
       location: "Austin, Texas",
+      logo: smartwebs,
       url: "https://smartwebs.com",
       startDate: "2018-07-01",
       endDate: "2018-11-01",
@@ -86,6 +96,7 @@ const resume: Resume = {
       url: "https://www.crunchbase.com/organization/uninstall-io",
       startDate: "2015-11-01",
       endDate: "2016-12-01",
+      logo: songline,
       highlights: [
         "Developed a dynamic AngularJS-based frontend dashboard to track uninstalls using uninstall.io API.",
         "Designed and implemented visually appealing websites uninstall.io and deepinsights.io using Middleman, HTML, CSS, and JavaScript.",
@@ -99,6 +110,7 @@ const resume: Resume = {
       position: "Fullstack developer",
       location: "Bangalore, India",
       url: "https://www.hashcube.com/",
+      logo: hashcube,
       startDate: "2013-09-01",
       endDate: "2015-10-01",
       highlights: [
@@ -115,6 +127,7 @@ const resume: Resume = {
       position: "Fullstack developer",
       location: "Bangalore, India",
       url: "https://www.linkedin.com/company/flamboyanz-software-private-limited/?originalSubdomain=in",
+      logo: flamboyanz,
       startDate: "2012-11-01",
       endDate: "2013-08-01",
       highlights: [
@@ -128,6 +141,7 @@ const resume: Resume = {
     {
       institution: "Auburn University",
       url: "https://www.auburn.edu/",
+      logo: auburn,
       area: "Computer Science and Software Engineering",
       studyType: "Masters",
       score: "3.5",
@@ -147,6 +161,7 @@ const resume: Resume = {
     {
       institution: "Vishweshvaraya Technological University",
       url: "https://vtu.ac.in/",
+      logo: vtu,
       area: "Computer Science Engineering",
       studyType: "Bachelors",
       score: "65%",
@@ -157,12 +172,14 @@ const resume: Resume = {
       name: "Google Project Management: Specialization",
       date: "2023-02-18",
       issuer: "Coursera",
+      logo: google,
       url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L99Q76PWG52B",
     },
     {
       name: "Foundations of UX",
       date: "2021-03-28",
       issuer: "Coursera",
+      logo: google,
       url: "https://www.coursera.org/account/accomplishments/specialization/certificate/L99Q76PWG52B",
     },
   ],
@@ -174,6 +191,7 @@ const resume: Resume = {
         "HTML5",
         "CSS3",
         "Sass",
+        'User Experience',
         "JavaScript",
         "TypeScript",
         "REST",
@@ -192,36 +210,78 @@ const resume: Resume = {
     {
       name: "Backend development",
       level: "Master",
-      keywords: [],
+      keywords: [
+        'Python',
+        'SQL',
+        'MongoDB',
+        'Node.js',
+        'Express.js'
+      ],
     },
     {
       name: "Machine Learning and AI",
       level: "Intermediate",
-      keywords: [],
+      keywords: [
+        'numpy',
+        'scipy',
+        'pandas',
+        'tensorflow',
+        'Neural networks',
+        'matplotlib',
+        'Reinforcement learning',
+      ],
     },
     {
       name: "Devops",
       level: "Intermediate",
-      keywords: [],
+      keywords: [
+        'Build Automation',
+        'Jenkins',
+        'Github Actions',
+        'Gitlab CI',
+        'Shell scripting',
+        'Linux',
+      ],
     },
-    { name: "Other Tools", level: "Master", keywords: [] },
+    {
+      name: 'Management',
+      level: 'Master',
+      keywords: [
+        'Sprint management',
+        'Team Management',
+        'Stakeholder communication',
+        'Sofware design',
+        'Risk management',
+        'Agile methodology',
+        'Mentoring',
+        'Hiring',
+        'Career development',
+        'Life-Cycle management',
+        'Techincal Architecture',
+        'Software Design',
+        'Optimizing',
+        'Documentation',
+        'Team Management',
+      ]
+    },
+    { name: "Other Tools", level: "Master", keywords: ['Jira', 'Jira Structures', 'Confluence', "Slack Workflows"] },
   ],
   languages: [
     {
       language: "English",
-      fluency: "Fluent",
+      fluency: "Read, Write and Speak",
     },
     {
       language: "Hindi",
-      fluency: "Advanced",
+      fluency: "Read, Write and Speak",
     },
     {
       language: "Telugu",
-      fluency: "Fluent",
+      fluency: "Read and Speak",
     },
     {
       language: "Kannada",
-      fluency: "Fluent",
+      fluency: "Read, Write and Speak",
     },
   ],
   projects: [

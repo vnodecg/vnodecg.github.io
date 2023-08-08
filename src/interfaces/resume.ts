@@ -2,6 +2,15 @@ export interface Profile {
   network: string;
   username: string;
   url: string;
+  icon?: string;
+}
+
+export interface Location {
+  address?: string;
+  postalCode?: string;
+  city: string;
+  countryCode: string;
+  region?: string;
 }
 
 export interface BasicInfo {
@@ -12,19 +21,14 @@ export interface BasicInfo {
   phone: string;
   url?: string;
   summary?: string;
-  location: {
-    address?: string;
-    postalCode?: string;
-    city: string;
-    countryCode: string;
-    region?: string;
-  };
+  location: Location;
   profiles: Profile[];
 }
 
 export interface Work {
   name: string;
   position: string;
+  logo?: string;
   url?: string;
   location?: string;
   startDate: string;
@@ -41,6 +45,7 @@ export interface Education {
   startDate?: string;
   endDate?: string;
   score?: string;
+  logo?: string;
   courses?: string[];
 }
 
@@ -49,6 +54,7 @@ export interface Certificate {
   date: string;
   issuer: string;
   url?: string;
+  logo?: string;
 }
 
 export interface Volunteer {
