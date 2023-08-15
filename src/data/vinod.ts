@@ -289,30 +289,30 @@ const resume: Resume = {
       name: "Novus Editor",
       startDate: "2012-01-01",
       summary:
-        "A full-featured source code editor with real-time chat and a shared scratchpad built using JavaFX and codemirror.JS",
+        "Developed Novus Editor, a comprehensive source code editor featuring real-time chat functionality and a collaborative scratchpad. Constructed using JavaFX and codemirror.JS.",
     },
     {
       name: "Advanced learning tool (ALT)",
       summary:
-        "E-learning platform built to help Auburn University teachers teach advanced phonetic transcriptions to students. Built using React.JS, Redux, Ruby on Rails.",
+        "Designed and engineered an innovative e-learning platform, ALT, to facilitate advanced phonetic transcription instruction at Auburn University. Employed cutting-edge technologies, including React.JS, Redux, and Ruby on Rails.",
       startDate: "2018-05-04",
     },
     {
       name: "Ms Pacman RL",
       summary:
-        "Reinforcement learning AI class project built using NumPy, TensorFlow, gym. The program plays Ms. Pacman game intelligently to obtain max score using Q Learning.",
+        "Demonstrated expertise in reinforcement learning through the creation of an AI project, Ms. Pacman RL. Skillfully applied NumPy, TensorFlow, and gym libraries to develop an intelligent agent that optimizes gameplay and achieves maximum scores via Q Learning.",
       startDate: "2017-07-01",
     },
     {
       name: "Peer Share",
       summary:
-        "Award-winning project for Tata Communications Collabhack 2013. Uses web sockets to share files between users",
+        "Demonstrated expertise in reinforcement learning through the creation of an AI project, Ms. Pacman RL. Skillfully applied NumPy, TensorFlow, and gym libraries to develop an intelligent agent that optimizes gameplay and achieves maximum scores via Q Learning.",
       startDate: "2013-08-12",
     },
     {
       name: "Malware CAT",
       summary:
-        "A malware detector written from scratch in pure Java without libraries. Includes implementation of algorithms like K Nearest-Neighbors, Web Crawler, Steady State GA, Neural network with multiple activation functions, etc.",
+        "Pioneered the development of Malware CAT, a comprehensive malware detection tool crafted entirely from scratch using Java, devoid of external libraries. Implemented a range of advanced algorithms including K Nearest-Neighbors, Web Crawling, Steady State Genetic Algorithms, and Neural Networks featuring multiple activation functions.",
       startDate: "2018-04-01",
     },
   ],
