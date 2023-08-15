@@ -306,7 +306,7 @@ const resume: Resume = {
     {
       name: "Peer Share",
       summary:
-        "Demonstrated expertise in reinforcement learning through the creation of an AI project, Ms. Pacman RL. Skillfully applied NumPy, TensorFlow, and gym libraries to develop an intelligent agent that optimizes gameplay and achieves maximum scores via Q Learning.",
+        "Recognized for excellence, Peer Share emerged victorious at Tata Communications Collabhack 2013. Leveraged web sockets to establish seamless file sharing capabilities among users, enhancing collaboration.",
       startDate: "2013-08-12",
     },
     {
