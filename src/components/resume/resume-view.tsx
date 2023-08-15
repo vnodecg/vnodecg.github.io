@@ -1,9 +1,9 @@
-import { Resume } from "../../interfaces/resume";
+import { Resume, Location } from "../../interfaces/resume";
 import { Avatar } from "./avatar";
 import { Card } from "./card";
 import background from '../../assets/cover.jpg';
 import { gravatar } from "../../utils/gravatar";
-import { AtSymbolIcon, BriefcaseIcon, MapPinIcon, CalendarIcon, AcademicCapIcon, LinkIcon } from '@heroicons/react/24/solid';
+import { AtSymbolIcon, BriefcaseIcon, MapPinIcon, CalendarIcon, AcademicCapIcon, LinkIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import classNames from "classnames";
 import { ReactNode } from "react";
 import moment from "moment";
@@ -20,6 +20,11 @@ function IconText(props: { icon?: ReactNode, text: string | ReactNode, className
 
 function workDate(date?: string) {
   return date ? moment(date).format('MMM YYYY') : 'Current';
+}
+
+function address(loc: Location) {
+  return `${loc.address ? loc.address + ", " : ""}${loc.city ? loc.city + ", " : ""}${loc.countryCode ?? ""
+    }${loc.postalCode ?? `-${loc.postalCode}`}`;
 }
 
 const buttonClasses = classNames(
@@ -50,9 +55,9 @@ export function ResumeView(props: Resume) {
       <div className="space-y-5">
         <Card classNames="print-no-show">
           <div className="h-32 bg-cover print-no-show" style={{ backgroundImage: `url(${background})` }} />
-          <div className="pt-24 p-8  relative">
+          <div className="pt-24 p-8 relative">
             {<Avatar image={props.basics.image ?? gravatar(props.basics.email, 120)} size={120} style={{ top: -60 }} className="absolute rounded-xl" />}
-            <div className="text-lg font-semibold mb-1 dark:text-white">{props.basics.name}</div>
+            <div className="text-3xl font-semibold mb-1 dark:text-white">{props.basics.name}</div>
             {props.basics.label && <div className="text-sm text-gray-400 mb-5">{props.basics.label}</div>}
             <a type="button" href={`mailto:${props.basics.email}`} className={classNames(buttonClasses, 'print-no-show')}>Get in touch</a>
           </div>
@@ -64,7 +69,11 @@ export function ResumeView(props: Resume) {
 
         <Card title="About me">
           <p className="text-base mb-2">{props.basics.summary}</p>
-          <IconText icon={<AtSymbolIcon width={iconSize} />} text={<a href={`mailto:${props.basics.email}`} className="text-blue-500">{props.basics.email}</a>} />
+          <div className="flex flex-row mt-4">
+            <IconText icon={<AtSymbolIcon width={iconSize} />} text={<a href={`mailto:${props.basics.email}`} className="text-blue-500">{props.basics.email}</a>} />
+            <IconText className="ml-3" icon={<PhoneIcon width={iconSize} />} text={<a href={`tel:${props.basics.phone.replace(' ', '')}`} className="text-blue-500">{props.basics.phone}</a>} />
+            {props.basics.location && <IconText className="ml-3" icon={<MapPinIcon width={iconSize} />} text={address(props.basics.location)} />}
+          </div>
         </Card>
 
         {props.skills && <Card title="Skills">

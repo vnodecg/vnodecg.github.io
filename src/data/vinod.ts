@@ -13,7 +13,7 @@ const resume: Resume = {
     name: "Vinod C G",
     label: "Engineering manager",
     email: "vnodecg1990@gmail.com",
-    phone: "+91 95358 49622",
+    phone: "+91 90198 81672",
     url: "",
     summary: "Accomplished Software Engineering Manager and Full Stack Developer, adept at leading distributed teams, delivering successful projects, and implementing UI/UX solutions.",
     location: {
